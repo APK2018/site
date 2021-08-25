@@ -1,41 +1,37 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.css">
+	 <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/documents.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;900&display=swap" rel="stylesheet"> 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="images/logo.svg" type="image/png">
-    <title>Горгаз сервис АТК</title>
+    <link rel="shortcut icon" href="../images/logo.svg" type="image/png">
+    <title>Приложение</title>
 </head>
 <body>
-    <div class="header">
+	<div class="header">
         <div class="menu"></div>
         <div class="logo">
-            <a href="#">
+            <a href="../index.html">
                 <h2>«Горгаз сервис АТК»</h2>
             </a>
         </div>
         <ul class="menu-list">
-            <a href="">
+            <a href="../index.html">
                 <li class="main">
                     Главная
                 </li>
             </a>
-            <a href="layout/contacts.html">
+            <a href="contacts.html">
                 <li class="contacts">
                     Контакты
                 </li>
             </a>
-            <a href="layout/documents.html">
-                <li class="documents">
-                    Приложения
-                </li>
-            </a>
-            <a href="#">
+            <a href="about.html">
                 <li class="info">О нас
                     <!-- <ul>
                         <a href="#">
@@ -47,7 +43,7 @@
                     </ul> -->
                 </li>
             </a>
-            <a href="layout/price.html">
+            <a href="price.html">
                 <li class="price">
                     Цены
                 </li>
@@ -55,7 +51,23 @@
         </ul>
         <div class="contacts"></div>
     </div>
-    <div class="content"></div>
+
+    <div class="content">
+    	<div class="container_doc">
+    		<h1>Приложения</h1>
+    		<div class="docs doc1">
+    			<p class="head-doc">Приказ № 4</p>
+    			<div class="link-pdf">
+	    			<a href="../docs/price.pdf" target="_blank" class="docs-a">
+	    			Прайс-лист газ.обслуж.pdf
+	    			</a>
+    			</div>
+    			<p style="color: #B8B8B8;">(PDF, 460 Кб)</p>
+    		</div>
+    		<div class="docs doc1"></div>
+    		<div class="docs doc1"></div>
+    	</div>
+    </div>
 
     <footer class="footer">
         <div class="left-block">
@@ -72,6 +84,5 @@
             <p>оказание услуг по техническому обслуживанию газового оборудования</p>
         </div>
     </footer>
-    <script src="main.js"></script>
 </body>
 </html>

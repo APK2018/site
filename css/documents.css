@@ -1,0 +1,42 @@
+body {
+	background: #fff;
+}
+
+.container_doc {
+	width: 80%;
+	border-radius: 8px;
+	margin: 50px auto;
+}
+
+.docs {
+	width: 100%;
+	height: 180px;
+	background: #E9ECEF;
+	margin-top: 50px;
+	padding: 20px 30px 30px 30px;
+}
+
+.head-doc {
+	font-size: 18px;
+}
+
+.docs a {
+	color: #000;
+	font-size: 24px;
+	border-bottom: 1px solid #000;
+	font-weight: 400;
+}
+
+.docs a:hover {
+	color: #fc4a0a;
+	border-bottom: 1px solid #FC865B;
+}
+
+.link-pdf:before {
+	content: '';
+	display: inline-block;
+	width: 26px;
+	height: 27px;
+	background: url(../images/pdf.svg);
+	background-repeat: no-repeat;
+}
