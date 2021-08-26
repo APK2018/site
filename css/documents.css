@@ -8,6 +8,11 @@ body {
 	margin: 50px auto;
 }
 
+.container_doc h1 {
+	font-weight: 500;
+	font-size: 38px;
+}
+
 .docs {
 	width: 100%;
 	height: 180px;

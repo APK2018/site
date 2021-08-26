@@ -34,7 +34,7 @@ a {
 	display: flex;
 	font-weight: 500;
 	font-size: 18px;
-	width: 900px;
+	width: 60%;
 	text-align: center;
 	margin: auto;
 	position: relative;
@@ -130,11 +130,21 @@ a {
 	display: flex;
 }
 
-.footer .center-block a{
+.footer .center-block a {
 	margin: 0;
 	margin-bottom: 2px;
 	margin-left: 10px;
 	color: #595D71;
+	border-left: 1px solid #595D5D;
+	padding-left: 8px;
+}
+
+.footer .center-block a:first-child {
+	border-left: none;
+}
+
+.footer .center-block p {
+	margin: 0;
 }
 
 .right-block {
