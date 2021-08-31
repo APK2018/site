@@ -126,7 +126,6 @@ a {
 }
 
 .footer .center-block {
-	width: 850;
 	display: flex;
 }
 
@@ -153,7 +152,7 @@ a {
 }
 
 .burger {
-	width: 80px;
+	width: 45px;
 	height: 100%;
 	display: none;
 }
@@ -163,8 +162,8 @@ a {
 }
 
 .pod {
-	width: 75px;
-	height: 10px;
+	width: 45px;
+	height: 7px;
 	background: #fff;
 	margin-top: 30px;
 	position: relative;
@@ -173,25 +172,25 @@ a {
 .pod-after {
 	content: '';
 	display: inline-block;
-	width: 75px;
-	height: 10px;
+	width: 45px;
+	height: 7px;
 	background: #fff;
 	position: absolute;
-	top: 10px;
+	top: 13px;
 }
 
 .pod-before {
 	content: '';
 	display: inline-block;
-	width: 75px;
-	height: 10px;
+	width: 45px;
+	height: 7px;
 	background: #fff;
 	position: absolute;
-	bottom: 10px;
+	bottom: 16px;
 }
 
 .first{
-  transform: translate(11px, -7px) rotate(45deg);
+  transform: translate(5px, 1px) rotate(45deg);
   transform-origin: left top;
 }
 /* анимация средней полоски */
@@ -200,7 +199,7 @@ a {
 }
 /* анимация нижней полоски */
 .last{
-  transform: translate(-12px, -49px) rotate(-45deg);
+  transform: translate(-8px, -35px) rotate(-45deg);
   transform-origin: right bottom;
 }
 
@@ -256,6 +255,9 @@ a {
 	.footer {
 		flex-direction: column;
 		align-items: center;
+	}
+
+	.footer p {
 		font-size: 12px;
 	}
 

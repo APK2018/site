@@ -45,3 +45,11 @@ body {
 	background: url(../images/pdf.svg);
 	background-repeat: no-repeat;
 }
+
+@media all and (max-width:580px ) and (min-width:320px) {
+	.container_doc {
+	width: 80%;
+	border-radius: 8px;
+	margin: 50px 0;
+	}
+}
