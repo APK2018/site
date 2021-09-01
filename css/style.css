@@ -229,7 +229,7 @@ a {
 }
 
 
-@media all and (max-width:580px ) and (min-width:320px) {
+@media all and (max-width:790px ) and (min-width:320px) {
 	
 	.burger {
 		display: block;
