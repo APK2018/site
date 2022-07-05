@@ -3,6 +3,8 @@ body {
 	margin: 0;
 	font-family: 'Roboto', sans-serif;
 	background: url('../images/background.webp');
+	background-size: cover;
+	background-position: center;
 	background-repeat: no-repeat;
 }
 
@@ -13,7 +15,6 @@ a {
 
 .logo {
 	color: #fff;
-	margin-left: 100px;
 	cursor: pointer;
 }
 
@@ -26,20 +27,38 @@ a {
 }
 
 .header {
-	width: 100%;
 	display: flex;
 	justify-content: space-around;
 	background: #016CB8;
+	font-weight: 700;
+	line-height: 24px;
+	flex-direction: column;
+	padding: 0 12px 12px 12px;
+}
+
+.header__container {
+	display: flex;
+	justify-content: space-between;
+	max-width: 1300px;
+	width: 1300px;
+	margin: 0 auto;
+}
+
+.header__cities {
+	color: #fff;
+	width: 526px;
+	user-select: none;
+	font-size: 18px;
 }
 
 .menu-list {
 	list-style: none;
 	display: flex;
+	align-items: center;
 	font-weight: 500;
 	font-size: 18px;
-	width: 60%;
 	text-align: center;
-	margin: auto;
+	margin: 0;
 	position: relative;
 }
 
@@ -55,14 +74,10 @@ a {
 	position: relative;
 }
 
-.menu-list .info ul {
+ul.menu-list{
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	position: absolute;
-	height: 50px;
-	left: -40px;
-	top: 40px;
 }
 
 .menu-list .info ul li {
@@ -104,9 +119,65 @@ a {
 }
 
 .content {
-	width: 80%;
-	margin: 50px auto;
-	height: 900px;
+	font-family: "Montserrat";
+	padding: 70px 0 150px 0;
+	color: #fff;
+}
+
+.content-page {
+	max-width: 1300px;
+	margin: 70px auto;
+}
+
+.content__index {
+	background: linear-gradient(90deg, rgba(0, 0, 0, 0.55) 0%, rgba(255, 255, 255, 0.132) 100%);
+	background-clip: border-box;
+}
+
+.content__container {
+	margin: 0 auto;
+	max-width: 1300px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.content__block-info {
+	width: 623px;
+	padding: 21px 53px 27px 53px;
+	background: #fff;
+	border-radius: 13px;
+	position: relative;
+}
+
+.content__block-info-hr {
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 21px;
+	background: #016CB8;
+	border-radius: 6px 0px 0px 6px;
+}
+
+.content__title-tech, .content__title-sale {
+	color:  #016CB8;
+	font-weight: 600;
+	font-size: 32px;
+	line-height: 112.9%;
+}
+
+.content__title {
+	display: block;
+	font-size: 52px;
+	font-weight: 700;
+	width: 682px;
+}
+
+.contet__menu-tech, .contet__menu-sale {
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 112.9%;
+	color: rgba(0, 0, 0, 0.7);
 }
 
 .footer {
@@ -180,7 +251,7 @@ a {
 	height: 4px;
 	background: #fff;
 	position: absolute;
-	top: 17px;
+	bottom: 115px;
   transition: .15s;
 }
 
@@ -191,13 +262,13 @@ a {
 	height: 4px;
 	background: #fff;
 	position: absolute;
-	bottom: 15px;
+	top: 15px;
   transition: .15s;
 }
 
 .first{
-  transform: translate(5px, 0px) rotate(45deg);
-  transform-origin: left top;
+  transform: translate(-5px, 2px) rotate(45deg);
+  transform-origin: right bottom;
   transition: .15s;
 }
 /* анимация средней полоски */
@@ -206,7 +277,7 @@ a {
 }
 /* анимация нижней полоски */
 .last{
-  transform: translate(-7px, -28px) rotate(-45deg);
+  transform: translate(-3px, 0px) rotate(-45deg);
   transform-origin: right bottom;
   transition: .15s;
 }
@@ -219,6 +290,7 @@ a {
 	top: 100%;
 	left: 0;
 	width: 100%;
+	z-index: 99;
 }
 
 .burger .menu-burger a li {
@@ -237,8 +309,7 @@ a {
 }
 
 
-@media all and (max-width:790px ) and (min-width:320px) {
-	
+@media all and (max-width:930px ) {
 	.burger {
 		display: block;
 	}
@@ -282,6 +353,96 @@ a {
 		width: 50%;
 	}
 
+	.header {
+		flex-direction: row;
+	}
 
-	
+	.header__cities-list {
+		display: block;
+		word-break: break-all;
+		width: 300px;
+	}
+
+	.header__container {
+		display: flex;
+		justify-content: flex-start;
+	}
 }
+
+@media all and (max-width: 720px) {
+	.content__block-info {
+		width: auto;
+	}
+
+	.content__title {
+		width: auto;
+		font-size: 30px;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.content__title-tech, .content__title-sale {
+		font-size: 20px;
+	}
+
+	.content__tech-item, .contet__menu-sale {
+		font-size: 18px;
+	}
+
+}
+
+@media all and (max-width: 500px) {
+	.logo h1 {
+		font-size: 18px;
+	}
+
+	.header__cities-list {
+		font-size: 14px;
+	}
+
+	.content__title {
+		font-size: 22px;
+	}
+
+	.header__cities-list {
+		width: 200px;
+	}
+
+	.pod-after {
+		bottom: 107px;
+	}
+
+	.first {
+	  transform: translate(-6px, 3px) rotate(45deg);
+	}
+}
+
+@media all and (max-width: 320px) {
+	.pod-after {
+		bottom: 129px;
+	}
+
+	.first {
+	  transform: translate(-6px, 1px) rotate(45deg);
+	}
+}
+
+
+@media all and (max-width: 1300px) {
+	.header__container {
+		width: 100%;
+	}
+
+	.content__container {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.content__title {
+		margin-bottom: 100px
+	}
+
+	.header__cities {
+		width: auto;
+	}
+} 

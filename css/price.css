@@ -12,6 +12,18 @@ body {
 	padding: 30px;
 }
 
+.content-page__price-images-container {
+	margin: 50px auto;
+	max-width: 1200px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.content-page__price-img {
+	width: 1200px;
+}
+
 p {
 	font-size: 18px;
 }
@@ -129,4 +141,36 @@ p {
 		font-size: 16px;
 	}
 
+}
+
+@media all and (max-width: 1200px) {
+	.content-page__price-images-container {
+
+	}
+
+	.content-page__price-img {
+		width: 900px;
+	}
+
+	.content-page {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+@media all and (max-width: 900px) {
+	.content-page__price-img {
+		width: 500px;
+	}
+
+	.content-page {
+		margin-top: 0
+	}
+}
+
+@media all and (max-width: 500px) { 
+	.content-page__price-img {
+		width: 320px;
+	}
 }

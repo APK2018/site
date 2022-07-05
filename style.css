@@ -104,9 +104,15 @@ a {
 }
 
 .content {
+	font-family: "Montserrat";
 	width: 80%;
 	margin: 50px auto;
 	height: 900px;
+}
+
+.content__title {
+	font-weight: bold;
+	font-size: 52px;
 }
 
 .footer {
@@ -281,7 +287,5 @@ a {
 	.footer .right-block {
 		width: 50%;
 	}
-
-
-	
 }
+

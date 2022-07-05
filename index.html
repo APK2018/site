@@ -5,7 +5,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/logo.svg" type="image/png">
@@ -15,47 +16,38 @@
 </head>
 <body>
     <div class="header">
-        <div class="menu"></div>
-        <div class="logo">
-            <a href="#">
-                <h1>«Горгаз сервис АТК»</h1>
-            </a>
+        <div class="header__container">
+            <div class="header__cities">
+                <div class="logo">
+                    <a href="#">
+                        <h1>«ОП ООО "АТК" Участок ТО ЭРГО»</h1>
+                    </a>
+                </div>
+                <span class="header__cities-list">г. Красноперекопск, Красноперекопский район, г. Армянск, Первомайский район, Раздольненский район</span>
+            </div>
+            <ul class="menu-list">
+                <a href="">
+                    <li class="main">
+                        Главная
+                    </li>
+                </a>
+                <a href="layout/contacts.html">
+                    <li class="contacts">
+                        Контакты
+                    </li>
+                </a>
+                <a href="layout/documents.html">
+                    <li class="documents">
+                        Приложения
+                    </li>
+                </a>
+                <a href="layout/price.html">
+                    <li class="price">
+                        Цены
+                    </li>
+                </a>
+            </ul>
         </div>
-        <ul class="menu-list">
-            <a href="">
-                <li class="main">
-                    Главная
-                </li>
-            </a>
-            <a href="layout/contacts.html">
-                <li class="contacts">
-                    Контакты
-                </li>
-            </a>
-            <a href="layout/documents.html">
-                <li class="documents">
-                    Приложения
-                </li>
-            </a>
-            <a href="#">
-                <li class="info">О нас
-                    <!-- <ul>
-                        <a href="#">
-                            <li>Приложения</li>
-                        </a>
-                        <a href="#">
-                            <li></li>
-                        </a>
-                    </ul> -->
-                </li>
-            </a>
-            <a href="layout/price.html">
-                <li class="price">
-                    Цены
-                </li>
-            </a>
-        </ul>
-        <div class="contacts"></div>
         <div class="burger">
             <div class="pod-before"></div>
             <div class="pod"></div>
@@ -76,11 +68,6 @@
                         Приложения
                     </li>
                 </a>
-                <a href="#">
-                    <li>
-                        О нас
-                    </li>
-                </a>
                 <a href ="layout/price.html">
                     <li>
                         Цены
@@ -89,7 +76,32 @@
             </ul>
         </div>
     </div>
-    <div class="content"></div>
+    <div class="content content__index">
+        <div class="content__container">
+            <span class="content__title">
+                Выполняем работы по ремонту, установке, замене, пусконаладке газового оборудования с гарантией
+            </span>
+            <div class="content__block-info">
+                <div class="content__block-info-hr"></div>
+                <div class="content__block-tech">
+                    <span class="content__title-tech">Техническое обслуживание газового оборудования с заключением договора:</span>
+                    <ul class="contet__menu-tech">
+                        <li class="content__tech-item">Замена газового оборудования</li>
+                        <li class="content__tech-item">Проверка дымовых каналов</li>
+                        <li class="content__tech-item">Проверка вентиляционных каналов</li>
+                    </ul>
+                </div>
+                <div class="content__sale">
+                    <span class="content__title-sale">Скидки на технческие обслуживание:</span>
+                    <ul class="contet__menu-sale">
+                        <li class="content__sale-item">Инвалидам детства скидка 10%</li>
+                        <li class="content__sale-item">Пенсионерам 10%</li>
+                        <li class="content__sale-item">Ветеранам ВОВ бесплатно</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer class="footer">
         <div class="left-block">
